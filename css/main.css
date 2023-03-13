@@ -54,13 +54,13 @@ svg text {
         stroke-dasharray: 0% 100%;
     }
     25% {
-        stroke-width: 1px;
+        stroke-width: 2px;
     }
     50% {
         fill-opacity: 0;
     }
     75% {
-        stroke-width: 1px;
+        stroke-width: 2px;
     }
     100% {
         stroke-width: 0;
