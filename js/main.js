@@ -42,7 +42,48 @@ $(function(){
         $html.animate({scrollTop : posTop});
     
     });
+
+
+    // 나머지 타이틀
+    var animatedText = document.querySelectorAll(".animated-text");
+
+    function animate(element){
+    var textArray = element.innerText.split("");
+    element.firstChild.remove();
     
+    var elArray = textArray.map(
+        (letter,index)=>{
+        if(letter==" ") letter = '&nbsp;';
+        var el = document.createElement("span");
+        el.className = "letter";
+        el.innerHTML = letter;
+        el.style.animationDelay = index/(textArray.length)+"s";
+        element.appendChild(el);
+        return el;
+        }
+    );
+    element.innerHtml = elArray;
+    }
+
+    Array.from(animatedText).map(animate)
+
+
+    // 메뉴
+    let menu = document.querySelector('#ytoggle');  
+    let menuItems = document.querySelector('#yoverlay');  
+    let menuContainer = document.querySelector('.ymenu-container');  
+    let menuIcon = document.querySelector('i');  
+
+    function toggleMenu(e) {
+        menuItems.classList.toggle('yopen');
+        menuContainer.classList.toggle('yfull-menu');
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.add('fa-times');
+        e.preventDefault();
+    }
+
+    menu.addEventListener('click', toggleMenu, false);
+
 });
 
 

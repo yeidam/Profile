@@ -1,11 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
-
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-
 @font-face {
     font-family: 'MonoplexKRWideNerd-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-widenerd@1.0/MonoplexKRWideNerd-Bold.woff2') format('woff2');
     font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -27,17 +37,16 @@ header {
 
 svg {
     position: absolute;
-    top: 0;
+    top: -20px;
     left:0;
     width: 100%;
     height: 100vh;
     z-index: 1;  
-    font: 70px 'MonoplexKRWideNerd-Bold';
 }
 #header svg{
     letter-spacing: 5px;
 }
-svg text {
+/* svg text {
     fill: #111;
     stroke: #c7b1b1;
     fill-opacity: 1;
@@ -45,7 +54,103 @@ svg text {
     stroke-dasharray: 100% 0;
     z-index: 11;
     animation: stroke-offset 3s ease-out;
+} */
+.ytitle{
+    position: relative;
+    top: 40%;
+    left: 20px;
+    z-index: 99;
+    
 }
+.animated-text span.letter{
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 80px;
+    font-family: 'Y_Spotlight';
+    font-weight: 700;
+    color: #000;
+    margin: 10px;
+    animation: 1s tilted forwards ease-in-out infinite;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, rgba(204,91,35,1) 0%, rgba(43,58,116,1) 100%); */
+}
+@keyframes tilted {
+    0%{
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(-10deg);
+    }
+}
+.ytitle_b{
+    text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d,
+    9px 9px #f07a6a, 12px 12px 0 #ee6352;
+    font-family: 'Y_Spotlight';
+    display: inline-block;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+    color: #f6aca2;
+    animation: shadows 1.2s ease-in infinite;
+    background-image: none;
+}
+@keyframes shadows {
+    0% {
+        text-shadow: none;
+    }
+    10% {
+        transform: translate(-3px, -3px);
+        text-shadow: 3px 3px 0 #f49b90;
+    }
+    20% {
+        transform: translate(-6px, -6px);
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d;
+    }
+    30% {
+        transform: translate(-9px, -9px);
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+    }
+    40% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+        12px 12px 0 #ee6352;
+    }
+    50% {
+        transform: translate(-12px, -12px);
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+        12px 12px 0 #ee6352;
+    }
+    60% {
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+        12px 12px 0 #ee6352;
+    }
+    70% {
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+    }
+    80% {
+        text-shadow: 3px 3px 0 #f49b90,
+        6px 6px 0 #f28b7d;
+    }
+    90% {
+        text-shadow: 3px 3px 0 #f49b90;
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
+
 
 @keyframes stroke-offset {
     0% {
@@ -54,13 +159,13 @@ svg text {
         stroke-dasharray: 0% 100%;
     }
     25% {
-        stroke-width: 2px;
+        stroke-width: 1px;
     }
     50% {
         fill-opacity: 0;
     }
     75% {
-        stroke-width: 2px;
+        stroke-width: 1px;
     }
     100% {
         stroke-width: 0;
@@ -79,7 +184,7 @@ section{
     margin: 0 auto;
     position: relative;
     left: -300px;
-    top: 250px;
+    top: 20px;
     z-index: 10;
 }
 
@@ -163,3 +268,101 @@ section{
         transform: rotate(360deg);
     }
 }
+
+/* 네브 */
+.ycontainer {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ymenu-container {
+    background-color: #ffc901;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -120px;
+    top: -120px;
+    transition: all 0.3s;
+}
+.yfull-menu {
+    border-radius: 0;
+    padding: 0 !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.yfull-menu .ymenu {
+    top: 40px;
+    right: 40px;
+}
+
+.ymenu {
+    color: white;
+    font-size: 3.5em;
+    position: absolute;
+    top: 160px;
+    right: 160px;
+    z-index: 100;
+    transition: all 0.3s;
+}
+.ymenu i {
+    opacity: 0.7; 
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.ymenu i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.yoverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.yopen {
+    opacity: .9;
+    visibility: visible;
+    height: 100%;
+}
+/* .yopen li {
+    animation: fadeInRight .5s ease alternate;
+    animation-delay: .35s;
+}
+.yopen li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+
+.yopen li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+
+.yopen li:nth-of-type(4) {
+    animation-delay: .50s;
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        right: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+} */

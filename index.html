@@ -77,6 +77,21 @@
                     <img src="img/yeidam/logo.svg" class="img-responsive" alt="">
                 </a>
             </div>
+            <div class="ycontainer">
+                <div class="ymenu-container" id="ytoggle">
+                <a href="#" class="ymenu" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+                <div class="yoverlay" id="yoverlay">
+                    <nav class="yoverlay-menu">
+                        <ul>
+                            <li ><a href="#">Home</a></li>
+                            <li><a href="#">Tour</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>  
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -101,7 +116,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Header -->
     <header>
             <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
@@ -138,10 +153,15 @@
             <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
             </rect>
         </svg>
-        <svg viewBox="0 0 1280 720" id="header_svg">
-            <text text-anchor="middle" x="25%" y="50%">다양한 색을 가진</text>
-            <text text-anchor="middle" x="21%" y="63%">박예담입니다.</text>
-        </svg>
+        <!-- <svg viewBox="0 0 1280 720" id="header_svg">
+            <text text-anchor="middle" x="30%" y="50%">다양한 색을 가진</text>
+            <text text-anchor="middle" x="26%" y="63%">박예담입니다.</text>
+        </svg> -->
+        <h2 class="ytitle">
+            <span class="animated-text tilted">다양한</span> <span class="ytitle_b">색</span><span class="animated-text tilted">을 가진</span>
+            <br>
+            <span class="animated-text tilted">박예담입니다.</span>
+        </h2>
 
         <div class="ellipses-container">
             <div class="ellipses ellipses__outer--thin">
@@ -150,7 +170,6 @@
             <div class="ellipses ellipses__outer--thick"></div>
         </div>
     </header>
-    <div>아녕</div>
     <!-- About Section -->
     <section id="about">
         <div class="container-fluid">
@@ -1195,6 +1214,8 @@
 
     <!-- Vitality Theme Scripts -->
     <script src="js/vitality.js"></script>
+
+    
 
 </body>
 
