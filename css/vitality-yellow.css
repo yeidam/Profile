@@ -21,7 +21,7 @@ section {
 }
 .bg-dark {
   color: white;
-  background-color: #222;
+  /* background-color: #222; */
 }
 @media (max-width: 767px) {
   section {
@@ -189,12 +189,13 @@ hr.colored {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: transparent;
+  height: 0;
 }
 .navbar-default,
 .navbar-inverse {
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 .navbar-default .navbar-toggle,
 .navbar-inverse .navbar-toggle {
@@ -250,11 +251,11 @@ hr.colored {
   .navbar-inverse .navbar-nav > .active > a:focus {
     border-radius: 5px;
   }
-  .navbar-fixed-top.navbar-expanded {
+  /* .navbar-fixed-top.navbar-expanded {
     padding: 30px 0;
-  }
+  } */
   .navbar-fixed-top {
-    padding: 15px 0;
+    padding: 0;
     -webkit-transition: padding 0.5s;
     -moz-transition: padding 0.5s;
     transition: padding 0.5s;
@@ -279,7 +280,7 @@ header {
   display: block;
   height: auto;
   width: auto;
-  background-color: #222;
+  /* background-color: #222; */
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -1188,3 +1189,4 @@ body.vintage .about-carousel .owl-controls .owl-next,
 body.vintage .testimonials .owl-controls .owl-next {
   line-height: 55px !important;
 }
+

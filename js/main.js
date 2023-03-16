@@ -1,47 +1,36 @@
-// var mHtml = $("html");
-// var page = 1;
-
-// mHtml.animate({scrollTop : 0},10);
-
-// $(window).on("wheel", function(e) {
-//     if(mHtml.is(":animated")) return;
-//     if(e.originalEvent.deltaY > 0) {
-//         if(page == 4) return;
-//         page++;
-//     } else if(e.originalEvent.deltaY < 0) {
-//         if(page == 1) return;
-//         page--;
-//     }
-//     var posTop =(page-1) * $(window).height();
-//     mHtml.animate({scrollTop : posTop});
-// })
 $(function(){
-    var $html = $("html");
+    // window.addEventListener("wheel", function(e){
+    //     e.preventDefault();
+    // },{passive : false});
 
+    // });
+    // 스크롤
+    var $html = $("html");
     var page = 1;
-    
     var lastPage = $(".content").length;
     
     $html.animate({scrollTop:0},11);
-    
     $(window).on("wheel", function(e){
-    
         if($html.is(":animated")) return;
-    
         if(e.originalEvent.deltaY > 0){
             if(page== lastPage) return;
-    
             page++;
         }else if(e.originalEvent.deltaY < 0){
             if(page == 1) return;
-    
             page--;
         }
         var posTop = (page-1) * $(window).height();
-    
         $html.animate({scrollTop : posTop});
-    
     });
+
+    // 네브
+    $('.nav-toggle').click(function() {
+		$('.yinner').toggleClass('yopen');
+	});
+
+    $('.nav-link').click(function() {
+		$('.yinner').toggleClass('yopen');
+	});
 
 
     // 나머지 타이틀
@@ -64,26 +53,7 @@ $(function(){
     );
     element.innerHtml = elArray;
     }
-
     Array.from(animatedText).map(animate)
-
-
-    // 메뉴
-    let menu = document.querySelector('#ytoggle');  
-    let menuItems = document.querySelector('#yoverlay');  
-    let menuContainer = document.querySelector('.ymenu-container');  
-    let menuIcon = document.querySelector('i');  
-
-    function toggleMenu(e) {
-        menuItems.classList.toggle('yopen');
-        menuContainer.classList.toggle('yfull-menu');
-        menuIcon.classList.toggle('fa-bars');
-        menuIcon.classList.add('fa-times');
-        e.preventDefault();
-    }
-
-    menu.addEventListener('click', toggleMenu, false);
-
 });
 
 
