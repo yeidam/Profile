@@ -1,43 +1,36 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald:400|Open+Sans:700);
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@font-face {
-    font-family: 'MonoplexKRWideNerd-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-widenerd@1.0/MonoplexKRWideNerd-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+/* 메인페이지 글꼴 */
 @font-face {
     font-family: 'Y_Spotlight';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'SDSamliphopangche_Basic';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
 *{
     cursor: url(/img/yeidam/hi.png) 2 2, auto !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.25' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E") center center / 512px repeat, #c7b1b1;
+    background-color: #fff;
 }
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 header {
     background-blend-mode: overlay;
-    display: grid;
-    grid: 100vh / 1fr;
-    place-items: center;
 }
 
 svg {
     position: absolute;
-    top: -20px;
     left:0;
     width: 100%;
     height: 100vh;
@@ -70,6 +63,7 @@ svg {
     top: 40%;
     left: 60px;
     z-index: 99;
+    width: 1200px;
 }
 .animated-text span.letter{
     letter-spacing: 1px;
@@ -191,9 +185,9 @@ section{
     height: 500px;
     border-radius: 50%;
     margin: 0 auto;
-    position: relative;
-    left: -150px;
-    top: 0px;
+    position: absolute;
+    left: 25%;
+    top: 30%;
     z-index: 10;
 }
 
@@ -278,17 +272,17 @@ section{
     }
 }
 /* 네브 */
-
+.youter{
+    width: auto;
+}
 .youter nav {
-	padding-top: 30px;
+	padding-top: 100px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: #333;
+	background-color: #000;
 	text-align: center;
 	transform: translateX(-100%);
 }
@@ -336,7 +330,8 @@ section{
 	font-size: 46px;
 	letter-spacing: 4px;
 	display: block;
-	font-family: 'Mochiy Pop One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 	padding: 5px 0;
 	margin: 25px 0;
 	text-transform: uppercase;
@@ -356,4 +351,225 @@ section{
 .nav-link:hover::before {
 	width: 140%;
 	filter: drop-shadow(0 0 50px var(--clr))
+}
+
+/* 자기소개 색션 */
+#about{
+    height: 100vh;
+}
+#about .container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+#about .content-row{
+    width: 50%;
+}
+#about .ywhy{
+    position: relative;
+    top: -295px;
+}
+#about .y_about_img{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #09383E;
+}
+
+
+/* 탑버튼 */
+#back-top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+    font-size: 5rem;
+    padding: 1rem
+}
+
+.fly {
+    position: absolute;
+    animation: launch ease-in-out 3s infinite;
+    -webkit-animation: launch ease-in-out 3s infinite;
+}
+
+@-webkit-keyframes launch {
+    100% {
+        transform: translateX(-800px) translateY(-800px);
+    }
+}
+@keyframes launch {
+    100% {
+        transform: translateX(-800px) translateY(-800px);
+    }
+} 
+/* @media (min-width: 500px) {
+.content {
+    width: 45%
+}
+} */
+
+@keyframes load{0%{stroke-dashoffset:0}}
+.progress {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+}
+.progress>li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-family: Lato;
+    font-weight:100;
+    margin: 100px;
+    margin-top: 150px;
+    top: -50px;
+    left: -50px;
+}
+.progress>li:before {
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -166px;
+    font-weight:400;
+    width: 150px;
+    font-size: 19px;
+}
+.progress>li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    left: 57px;
+    font-size: 20px;
+    text-align: center;
+}
+.progress svg {
+    width: 150px;
+    height: 150px;
+    top: -20px;
+    position: absolute;
+}
+.progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: -20px;
+    transform: rotate(-90deg);
+}
+.progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #fff;
+    opacity:.9;
+    animation: load 10s;
+}
+
+
+
+/* 스크롤 */
+#ScrollPane{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#ScrollPane{ 
+    position:relative; 
+    width:100%; 
+    height:100%; 
+}
+.scr,.pane{ 
+    position:relative; 
+    width:100%; 
+    height:100%;
+    font-size:30px;
+}
+
+.horiz { 
+    position:relative; 
+    width:100%; 
+    height:100%; }
+.horiz .spane{ 
+    overflow:hidden; 
+    font-size:0; 
+    position:relative; 
+    width:100%; 
+    height:100%; 
+    white-space:nowrap;
+} 
+.horiz .pane{ 
+    display:inline-block;
+    width:100%; 
+}
+.ct{  
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.scrollup{ 
+    position:absolute; 
+    width:200px; 
+    top:10px; 
+    left:50%; 
+    margin-left:-100px; 
+    z-index:3000; 
+    font-size:20px; 
+    text-align:center;
+}
+.scrolldown{ 
+    position:absolute; 
+    width:200px; 
+    bottom:10px; 
+    left:50%; 
+    margin-left:-100px; 
+    z-index:3000; 
+    font-size:20px; 
+    text-align:center;
+}
+
+#sample{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#sample .discription{
+    padding: 200px 150px 0 0;
+
+}
+#sample .discription_text{}
+#sample .discription_text h2{
+    color: #fff;
+    font-weight: 300;
+    font-family: 'SDSamliphopangche_Basic';
+}
+#sample .discription_text p{
+    color: #fff;
+    line-height: 30px;
+}
+#sample .discription_text p strong{
+    margin-right: 20px;
+}
+#sample .discription button{
+
 }

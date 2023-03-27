@@ -6,6 +6,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 .img-centered {
   margin: 0 auto;
