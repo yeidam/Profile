@@ -39,6 +39,14 @@ $(function(){
         Init();
     });
 
+    $("#img_popup").click(function(){
+        $(".modal_popup").addClass('show')
+        $("#page-top").addClass('scrollLock')
+    });
+    $(".modal_btn").click(function(){
+        $(".modal_popup").removeClass('show')
+    });
+
     
     // 네브
     $('.nav-toggle').click(function() {

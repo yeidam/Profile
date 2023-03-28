@@ -29,6 +29,10 @@ header {
     background-blend-mode: overlay;
 }
 
+section{
+    width: 100%;
+}
+
 svg {
     position: absolute;
     left:0;
@@ -358,6 +362,7 @@ section{
     height: 100vh;
 }
 #about .container-fluid{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -430,7 +435,7 @@ section{
     font-weight:100;
     margin: 100px;
     margin-top: 150px;
-    top: -50px;
+    top: -115px;
     left: -50px;
 }
 .progress>li:before {
@@ -472,6 +477,52 @@ section{
     animation: load 10s;
 }
 
+/* bar progress */
+.bar_progress_wrap{
+    position: relative;
+    top: -450px;
+    left: 150px;
+}
+.bar_progress {
+    background: rgba(109, 109, 109, 0.1);
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 5px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.bar_wrap{
+    display: flex;
+    width: 500px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 20px;
+}
+.bar_wrap .bar{
+    width: 25%;
+    border-left: solid 10px #fff;
+}
+.bar_progress_wrap .bar_title{
+    left: -100px;
+    position: absolute;
+    font-size: 20px;
+    color: #93A2AC;
+}
+
+.bar_progress-value {
+    animation: load 3s normal forwards;
+    background: linear-gradient(69deg, rgba(108,110,162,1) 23%, rgba(163,92,72,1) 100%);
+    height: 5px;
+    width: 0;
+}
+
+@keyframes load {
+0% { width: 0; }
+100% { width: 60%; }
+}
 
 
 /* 스크롤 */
@@ -548,7 +599,50 @@ section{
     text-align:center;
 }
 
+
+/* 스킬 섹션 */
+.modal_popup{
+    display: none;
+    background-color: #000000dd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.modal_popup .modal_wrap{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    top: 60px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    overflow-y: scroll;
+}
+.modal_popup .modal_wrap .modal_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal_popup .modal_wrap .modal_img{
+    width: 100%;
+    overflow-y: scroll;
+}
+.modal_popup .modal_wrap .modal_img img{
+    width: 100%;
+}
+body.scrollLock { 
+    overflow: hidden;
+}
+.modal_popup.show{
+    display: block !important;
+}
 #sample{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
