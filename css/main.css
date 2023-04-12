@@ -304,21 +304,18 @@ section{
     position: relative;
     left: 150px;
 }
-/* #about .about_deco{
-    display: block;
-    height: 500px;
-    width: 100px;
-    color: #efdb5e;
-} */
+
+
 
 /* about 두번째 색션 */
 #about .career{
     margin-top: 100px;
+    position: relative;
 }
 #about .career_1,
 #about .career_2{
     display: flex;
-    height: 300px;
+    height: 400px;
 }
 #about .career_1 > div,
 #about .career_2 > div{
@@ -332,7 +329,7 @@ section{
 #about .hard_skill_line,
 #about .certificate_line,
 #about .educations_line{
-    width: 80%;
+    width: 90%;
     height: 40px;
     border: solid 1px #000;
     border-radius: 25px;
@@ -349,12 +346,41 @@ section{
     font-family: 'Abril Fatface', cursive;
     /* letter-spacing: 1px; */
 }
+#about .hard_skill_wrap{
+    left: -50px;
+}
+#about .hard_skill_inner{
+    display: flex;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    left: 50px;
+}
+#about .hard_skill_inner li{
+    width: 100px;
+    display: flex;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    display: block;
+    border: solid 1px #2b7799;
+    margin: 10px;
+}
+
+
+
+@keyframes load {
+	0% { width: 0; }
+	100% { width: 68%; }
+}
+
 
 #about .certificate_wrap > p,
 #about .educations_wrap > p{
     position: absolute;
     top: -25px;
-    left: 50px;
+    left: 100px;
     font-size: 30px;
     background-color: #fbfbe6;
     width: 200px;
@@ -363,13 +389,24 @@ section{
     /* letter-spacing: 1px; */
 }
 
+
 #about .certificate_wrap{
-    left: 100px;
+    left: 150px;
 }
 #about .educations_wrap{
     right: -200px;
 }
-
+/* #about .about_deco{
+    height: 500px;
+    width: 50px;
+    background-color: #efdb5e;
+    border-radius: 50px;
+    position: absolute;
+    top: -60px;
+    left: calc(50% - 20px);
+    background-image: url(../img/yeidam/texture4.png);
+    background-blend-mode: multiply;
+} */
 
 /* 포트폴리오페이지 */
 #marquee{
