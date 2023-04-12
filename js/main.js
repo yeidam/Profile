@@ -1,102 +1,60 @@
-$(function(){
-    // 스크롤
-    Init();
-    $('.pane,.scrzone').mousewheel(function(event) {
-        event.preventDefault();
-        if($ScrollState==false){$ScrollState=true;if(event.deltaY < 0){UpdateScreen('+');}else if(event.deltaY > 0){UpdateScreen('-');}else{$ScrollState=false;}}
+window.onload = function(){
+    // 마우스
+    const cursorDot = document.querySelector("[data-cursor-dot]");
+    const cursorOutline = document.querySelector("[data-cursor-outline]");
+
+    window.addEventListener("mousemove",function(e){
+        const posX = e.clientX;
+        const posY = e.clientY;
+
+        cursorDot.style.left = `${posX}px`;
+        cursorDot.style.top = `${posY}px`;
+
+        // cursorOutline.style.left = `${posX}px`;
+        // cursorOutline.style.top = `${posY}px`;
+        cursorOutline.animate({
+            left: `${posX}px`,
+            top: `${posY}px`
+        }, { duration: 500, fill: "forwards" });
     });
-    function Init(){
-        $ScrollSpeed = 0.3; 
-        $ScrollState=false; 
-        $ActualSlide = $CibleSlide = $('.pane').first().attr('data-id');
-        $ListSlides = new Array(); $('.pane').each(function(){ $ListSlides.push($(this).attr('data-id')); });
-        TweenMax.to(window, 0, {scrollTo:0});
-        TweenMax.to('.spane', 0, {scrollTo:{y:0, x:0}});
-        $('.visible').removeClass('visible');
-        $('#Helper').html("Init()");
+
+    // 리뉴얼 페이지
+    var $cursor = $(".renewal_cursor"),
+    $overlay = $(".project-overlay");
+
+    function moveCircle(e) {
+        TweenLite.to($cursor, 0.5, {
+            css: {
+            left: e.pageX,
+            top: e.pageY
+            },
+            delay: 0.03
+        });
     }
-    function UpdateScreen(operator){
-        $ActualSlide = $CibleSlide;
-        if(operator=="+"){ 
-            $CibleSlide = $ListSlides[$ListSlides.indexOf($ActualSlide)+1]; 
-        }else{ 
-            $CibleSlide = $ListSlides[$ListSlides.indexOf($ActualSlide)-1]; 
-        }
 
-        $('#Helper').html("From <strong>"+$ActualSlide+"</strong> to <strong>"+$CibleSlide+"</strong>");
-        if(!$CibleSlide){ $ScrollState=false; $('#Helper').html("Break");$CibleSlide = $ActualSlide; return; }
-        $ActualSlideDOM = $('.pane[data-id='+$ActualSlide+']');
-        $CibleSlideDOM = $('.pane[data-id='+$CibleSlide+']');
-    
-        if( $ActualSlideDOM.closest('.prt').find('.spane').length && (operator=="+" && $ActualSlideDOM.next('.pane').length  ||  operator=="-" && $ActualSlideDOM.prev('.pane').length ) ){
-            TweenMax.to($ActualSlideDOM.closest('.spane'), $ScrollSpeed, {scrollTo:'.pane[data-id='+$CibleSlide+']',ease: Power2.easeOut,onComplete:function(){$ScrollState=false; $CibleSlideDOM.addClass('visible');}});
-        }else{
-            TweenMax.to(window, $ScrollSpeed, {scrollTo:'.pane[data-id='+$CibleSlide+']',ease: Power2.easeOut,onComplete:function(){$ScrollState=false; $CibleSlideDOM.addClass('visible');}});
-        }
-    }
-    //Init() On Resize
-    $(window).resize(function(){
-        Init();
+    $(".p-1").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_2.png)" });
     });
 
-    $("#img_popup").click(function(){
-        $(".modal_popup").addClass('show')
-        $("#page-top").addClass('scrollLock')
+    $(".p-2").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_3.png)" });
     });
-    $(".modal_btn").click(function(){
-        $(".modal_popup").removeClass('show')
+    $(".p-3").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_3.png)" });
     });
-
-    
-    // 네브
-    $('.nav-toggle').click(function() {
-		$('.yinner').toggleClass('yopen');
-	});
-
-    $('.nav-link').click(function() {
-		$('.yinner').toggleClass('yopen');
-	});
-    
-
-    // 탑버튼
-    var btn = $("#back-top");
-    $(window).scroll(function () {
-        $(this).scrollTop() > 100 ? btn.fadeIn() : btn.fadeOut();
-    });
-    btn.click(function () {
-        $("body,html").animate({
-            scrollTop: 0
-            }, 1000);
-        $(".rocket").addClass("fly");
-        setTimeout(function () {
-            $(".rocket").removeClass("fly");
-        }, 1000);
-        return false;
+    $(".p-4").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_4.png)" });
     });
 
+    var flag = false;
+    $($overlay).mousemove(function() {
+        flag = true;
+        TweenLite.to($cursor, 0.3, {scale: 1, autoAlpha: 1});
+        $($overlay).on("mousemove", moveCircle);
+    });
 
-    // 나머지 타이틀
-    var animatedText = document.querySelectorAll(".animated-text");
-
-    function animate(element){
-    var textArray = element.innerText.split("");
-    element.firstChild.remove();
-    
-    var elArray = textArray.map(
-        (letter,index)=>{
-        if(letter==" ") letter = '&nbsp;';
-        var el = document.createElement("span");
-        el.className = "letter";
-        el.innerHTML = letter;
-        el.style.animationDelay = index/(textArray.length)+"s";
-        element.appendChild(el);
-        return el;
-        }
-    );
-    element.innerHtml = elArray;
-    }
-    Array.from(animatedText).map(animate)
-});
-
-
-
+    $($overlay).mouseout(function() {
+        flag = false;
+        TweenLite.to($cursor, 0.3, {scale: 0.1, autoAlpha: 0});
+    });
+}

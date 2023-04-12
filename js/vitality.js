@@ -68,7 +68,7 @@ $(document).ready(function() {
         autoHeight: true,
         mouseDrag: false,
         touchDrag: false,
-        transitionStyle: "fadeUp"
+        transitionStyle: "backSlide"
     });
 
     $(".testimonials-carousel, .mockup-carousel").owlCarousel({

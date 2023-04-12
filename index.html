@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
 
@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>포폴</title>
+    <title>PROTFOLIO</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -25,6 +25,17 @@
     <link href='https://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
 
+    <!-- 글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- Plugin CSS -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
@@ -34,18 +45,18 @@
     <link href="vendor/formstone/background.css" rel="stylesheet" type="text/css">
     <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Vitality Theme CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <!-- INSTRUCTIONS: Uncomment the color scheme you want to use. Red is chosen by default. -->
+    <link rel="stylesheet" href="./css/main.css">
     <link href="css/vitality-yellow.css" rel="stylesheet" type="text/css">
-
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
@@ -53,1105 +64,469 @@
 <!-- NOTE: Use the .modern or .vintage class to the body element below to see different font pairings! -->
 
 <body id="page-top">
-    <!-- 스크롤 -->
-    <div id="ScrollPane">
-        <!-- 첫번째 페이지 -->
-        <div class="scr pane prt" data-id="Welcome">
-            <div class="ct">
-                <!-- 첫번째 페이지 -->
-                <div class="ylogo">
-                    <a href="index.html"><img src="img/yeidam/logo.svg" alt="" style="width: 60px;"></a>
-                </div>
-                <!-- Navigation -->
-                <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
 
-                    <!-- nav -->
-                <div class="youter navbar navbar-inverse navbar-fixed-top navbar-expanded">
-                    <div class="yinner">
-                        <header>
-                            <div class="container-fluid clearfix">
-                                <div class="row">
-                                    <i class="fa fa-bars nav-toggle" aria-hidden="true"></i>
-                                    <nav role="navigation">
-                                        <i class="fa fa-times nav-toggle" aria-hidden="true"></i>
-                                        <ul class="list-unstyled" id="nav">
-                                            <li style="--clr:#00ade1">
-                                                <a class="nav-link page-scroll" href="#page-top" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
-                                            </li>
-                                            <li style="--clr:#ff6492">
-                                                <a class="nav-link page-scroll" href="#about" data-text="&nbsp;About"><span>&nbsp;About&nbsp;</span></a>
-                                            </li>
-                                            <li style="--clr:#ffdd1c">
-                                                <a class="nav-link page-scroll" href="#process" data-text="&nbsp;Skills"><span>&nbsp;Skills&nbsp;</span></a>
-                                            </li>
-                                            <li style="--clr:#00dc82">
-                                                <a class="nav-link page-scroll" href="#work" data-text="&nbsp;Portfolio"><span>&nbsp;Portfolio&nbsp;</span></a>
-                                            </li>
-                                            <li  style="--clr:#dc00d4">
-                                                <a class="nav-link page-scroll" href="#contact" data-text="&nbsp;Contacts"><span>&nbsp;Contacts&nbsp;</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </header>
-                    </div>
-                </div>
-
-                <!-- Header -->
-                <header>
-
-                    <!-- 배경 -->
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                        <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-                            <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
-                            <stop offset="0%" stop-color="rgba(36, 76, 163, 1)" />
-                            <stop offset="100%" stop-color="rgba(144, 166, 214, 0)" />
-                        </radialGradient>
-                        <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
-                            <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
-                            <stop offset="0%" stop-color="rgba(224, 210, 11, 1)" />
-                            <stop offset="100%" stop-color="rgba(230, 225, 154, 0)" />
-                        </radialGradient>
-                        <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
-                            <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
-                            <stop offset="0%" stop-color="rgba(186, 67, 43, 1)" />
-                            <stop offset="100%" stop-color="rgba(199, 146, 135, 0)" />
-                        </radialGradient>
-                    </defs>
-                        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
-                        <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
-                        <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
-                        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite" />
-                        </rect>
-                        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
-                        <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
-                        <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
-                        <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite" />
-                        </rect>
-                        <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
-                        <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
-                        <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
-                        <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
-                        </rect>
-                    </svg>
-                    <h2 class="ytitle">
-                        <span class="animated-text tilted">다양한</span> <span class="ytitle_b">&ensp;색</span><span class="animated-text tilted">을 가진</span>
-                        <br>
-                        <span class="animated-text tilted">박예담입니다.</span>
-                    </h2>
-
-                    <div class="ellipses-container">
-                        <div class="ellipses ellipses__outer--thin">
-                            <div class="ellipses ellipses__orbit"></div>
-                        </div>
-                        <div class="ellipses ellipses__outer--thick"></div>
-                    </div>
-                </header>
-                <!-- About Section -->
-
-                <!-- 탑버튼 -->
-                <div id="back-top">
-                    <div class="rocket">🛸</div>
-                </div>
+    <div class="cursor_dot" data-cursor-dot></div>
+    <div class="cursor_outline" data-cursor-outline></div>
+    
+    <!-- Navigation -->
+    <!-- NOTE: .navbar-default and .navbar-inverse are both supported with this theme. -->
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i> Menu
+                </button>
+                <a class="y_logo page-scroll" href="#page-top">yeidam</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#renewal">Renewal</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- 두번째 페이지 -->
-        <div class="scr pane prt an" data-id="scr02" id="about">
-            <div class="ct">
-                <section>
-                    <div class="container-fluid">
-                        <div class="row text-center">
-                            <div class="col-lg-12 wow fadeIn">
-                                <h1>ABOUT ME</h1>
-                                <div class="y_about_img"></div>
-                                <p>학교 이름 등이 들어가남</p>
-                                <hr class="colored">
-                            </div>
-                        </div>
-                        <div class="row text-center content-row">
-                            
-                            <!--  Container  -->
-                            <ul class="progress">
-                                <!--  Item  -->
-                                <li data-name="Adobe Photoshop" data-percent="70%">
-                                    <svg viewBox="-10 -10 220 220">
-                                        <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                        </g>
-                                    </svg>
-                                    <svg viewBox="-10 -10 220 220">
-                                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="440"></path>
-                                    </svg>
-                                </li>
-                                <!--  Item  -->
-                                <li data-name="Adobe Illustrator" data-percent="80%">
-                                    <svg viewBox="-10 -10 220 220">
-                                        <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                        </g>
-                                    </svg>
-                                    <svg viewBox="-10 -10 220 220">
-                                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="490"></path>
-                                    </svg>
-                                </li>
-                                <!--  Item  -->
-                                <li data-name="Figma" data-percent="70%">
-                                    <svg viewBox="-10 -10 220 220">
-                                        <g fill="none" stroke-width="12" transform="translate(100,100)">
-                                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                        </g>
-                                    </svg>
-                                    <svg viewBox="-10 -10 220 220">
-                                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="440"></path>
-                                    </svg>
-                                </li>
-                                
-                            </ul>
-                            <!--  Defining Angle Gradient Colors  -->
-                            <svg width="0" height="0">
-                                <defs>
-                                <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
-                                    <stop stop-color="#618099"/>
-                                    <stop offset="100%" stop-color="#8e6677"/>
-                                </linearGradient>
-                                <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                                    <stop stop-color="#8e6677"/>
-                                    <stop offset="100%" stop-color="#9b5e67"/>
-                                </linearGradient>
-                                <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-                                    <stop stop-color="#9b5e67"/>
-                                    <stop offset="100%" stop-color="#9c787a"/>
-                                </linearGradient>
-                                <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                                    <stop stop-color="#9c787a"/>
-                                    <stop offset="100%" stop-color="#817a94"/>
-                                </linearGradient>
-                                <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-                                    <stop stop-color="#817a94"/>
-                                    <stop offset="100%" stop-color="#498a98"/>
-                                </linearGradient>
-                                <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-                                    <stop stop-color="#498a98"/>
-                                    <stop offset="100%" stop-color="#618099"/>
-                                </linearGradient>
-                                </defs>
-                            </svg>
-                            <!-- <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay=".2s">
-                                <div class="about-content">
-                                    <i class="fa fa-eye fa-4x"></i>
-                                    <h3>Retina Ready</h3>
-                                    <p>This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay=".4s">
-                                <div class="about-content">
-                                    <i class="fa fa-edit fa-4x"></i>
-                                    <h3>Easy to Edit</h3>
-                                    <p>Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay=".6s">
-                                <div class="about-content">
-                                    <i class="fa fa-tablet fa-4x"></i>
-                                    <h3>Responsive</h3>
-                                    <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 wow fadeIn ywhy" data-wow-delay=".8s">
-                                <div class="about-content">
-                                    <i class="fa fa-heart fa-4x"></i>
-                                    <h3>Built with Love</h3>
-                                    <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
-                                </div>
-                            </div> -->
-                            <div class="bar_progress_wrap">
-                                <div class="bar_progress">
-                                    <span class="bar_title">css</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">sass</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">html</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">jQuery</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">JavaScript</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">SQL</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                                <div class="bar_progress">
-                                    <span class="bar_title">React</span>
-                                    <div class="bar_progress-value"></div>
-                                    <div class="bar_wrap">
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                        <span class="bar"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+    </nav>
 
+    <!-- Header -->
+    <section id="main">
+        <div class="background">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <radialGradient id="Gradient1" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite" />
+                        <stop offset="0%" stop-color="rgba(224, 115, 88 ,1)" />
+                        <stop offset="100%" stop-color="rgba(224, 115, 88, 0)" />
+                    </radialGradient>
+                    <radialGradient id="Gradient2" cx="50%" cy="50%" fx="10%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                        <stop offset="0%" stop-color="rgba(36, 168, 141, 1" />
+                        <stop offset="100%" stop-color="rgba(36, 168, 141, 0)" />
+                    </radialGradient>
+                    <radialGradient id="Gradient3" cx="50%" cy="50%" fx="50%" fy="50%" r=".5">
+                        <animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite" />
+                        <stop offset="0%" stop-color="rgb(252, 227, 138, 1)" />
+                        <stop offset="100%" stop-color="rgba(252, 227, 138, 0)" />
+                    </radialGradient>
+                </defs>
+                    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient1)">
+                    <animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+                    <animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient2)">
+                    <animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite" />
+                    <animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite" />
+                    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite" />
+                    </rect>
+                    <rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient3)">
+                    <animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite" />
+                    <animate attributeName="y" dur="26s" values="0%;25%;0%" repeatCount="indefinite" />
+                    <animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite" />
+                    </rect>
+                </svg>
+        </div>
+        <div class="first_page_title">
+            <p class="title_bold">
+                PROT<br>FOLIO
+            </p>
+            <div class="sub_title">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+                   <style type="text/css">
+                       .st0{fill:#fbfbe6;}
+                   </style>
+                   <g transfome="skewX(-18)">
+                       <g strok-width="0.7">
+                           <path id="y" class="st0" d="M593.56,710.4c-5,0-9.4-1.35-13.2-4.05c-3.8-2.7-5.7-6.65-5.7-11.85c0-6.4,1.6-12.1,4.8-17.1
+                           c3.2-5,7.5-9.6,12.9-13.8c5.4-4.2,11.6-8.2,18.6-12c7-3.8,14.3-7.6,21.9-11.4c2.8-7.4,5.65-15.65,8.55-24.75
+                           c2.9-9.1,5.65-19.15,8.25-30.15c-6.4,10.4-13.25,19.35-20.55,26.85c-7.3,7.5-15.05,11.25-23.25,11.25c-3.8,0-7.55-0.85-11.25-2.55
+                           c-3.7-1.7-6.75-4.35-9.15-7.95c-2.4-3.6-3.6-8.2-3.6-13.8c0-5.6,0.95-12.1,2.85-19.5c1.9-7.4,4.25-14.6,7.05-21.6
+                           c2.8-7,5.7-12.8,8.7-17.4c3-4.6,5.6-6.9,7.8-6.9c0.8,0,2.25,0.3,4.35,0.9c2.1,0.6,4.1,1.45,6,2.55c1.9,1.1,2.85,2.25,2.85,3.45
+                           c-1.8,2.6-3.8,6.3-6,11.1c-2.2,4.8-4.35,10.15-6.45,16.05c-2.1,5.9-3.85,11.65-5.25,17.25c-1.4,5.6-2.1,10.4-2.1,14.4
+                           c0,3.6,0.8,6.5,2.4,8.7c1.6,2.2,4.4,3.3,8.4,3.3c3.8,0,8.05-1.85,12.75-5.55c4.7-3.7,9.4-8.45,14.1-14.25
+                           c4.7-5.8,9.05-12,13.05-18.6c0.6-2.2,1.15-4.45,1.65-6.75c0.5-2.3,0.95-4.65,1.35-7.05c0.6-2.8,2.05-6.05,4.35-9.75
+                           c2.3-3.7,5.95-5.55,10.95-5.55c1,0,2,0.05,3,0.15c1,0.1,2.1,0.35,3.3,0.75c0,3.2-0.95,9.15-2.85,17.85c-1.9,8.7-4.6,18.85-8.1,30.45
+                           c-3.5,11.6-7.65,23.5-12.45,35.7c9.4-3.6,18.6-9.55,27.6-17.85c9-8.3,16.3-19.35,21.9-33.15l3.9,3c-3,9.6-7.55,17.95-13.65,25.05
+                           c-6.1,7.1-12.95,13.2-20.55,18.3c-7.6,5.1-15.1,9.35-22.5,12.75c-5.2,12.8-10.85,24.8-16.95,36c-6.1,11.2-12.5,20.25-19.2,27.15
+                           C607.4,706.95,600.55,710.4,593.56,710.4z M592.06,700.8c3,0,8.05-3.95,15.15-11.85c7.1-7.9,14.65-21.75,22.65-41.55
+                           c-8.2,4.4-15.8,8.75-22.8,13.05c-7,4.3-12.6,8.95-16.8,13.95c-4.2,5-6.3,10.8-6.3,17.4c0,1.6,0.6,3.5,1.8,5.7
+                           C586.96,699.7,589.06,700.8,592.06,700.8z"/>
+                       <path id="e" class="st0" d="M729.75,639.6c-12.2,0-21.35-3.35-27.45-10.05c-6.1-6.7-9.15-14.95-9.15-24.75c0-9,2.25-18.5,6.75-28.5
+                           c4.5-10,10.5-19.4,18-28.2c7.5-8.8,15.75-15.95,24.75-21.45c9-5.5,17.9-8.25,26.7-8.25c4.6,0,8.85,1.2,12.75,3.6
+                           c3.9,2.4,5.85,7.3,5.85,14.7c0,7.6-2.25,14.75-6.75,21.45c-4.5,6.7-10.4,12.65-17.7,17.85c-7.3,5.2-15.3,9.45-24,12.75
+                           c-8.7,3.3-17.35,5.35-25.95,6.15c-0.4,2-0.7,3.9-0.9,5.7c-0.2,1.8-0.3,3.5-0.3,5.1c0,3,0.35,6,1.05,9c0.7,3,1.95,5.75,3.75,8.25
+                           c1.8,2.5,4.25,4.45,7.35,5.85c3.1,1.4,6.95,2.1,11.55,2.1c8.6,0,17.1-2.45,25.5-7.35c8.4-4.9,16.2-11.35,23.4-19.35
+                           c7.2-8,13.3-16.8,18.3-26.4l3.6,2.7c-5.4,12-12.25,22.4-20.55,31.2c-8.3,8.8-17.3,15.65-27,20.55
+                           C749.6,637.15,739.75,639.6,729.75,639.6z M715.05,589.2c5.4-1.8,11.5-4.45,18.3-7.95c6.8-3.5,13.35-7.65,19.65-12.45
+                           c6.3-4.8,11.5-10.1,15.6-15.9c4.1-5.8,6.15-11.9,6.15-18.3c0-2.2-0.4-3.9-1.2-5.1c-0.8-1.2-2.5-1.8-5.1-1.8
+                           c-4.8,0-9.9,1.85-15.3,5.55c-5.4,3.7-10.6,8.55-15.6,14.55c-5,6-9.5,12.6-13.5,19.8C720.05,574.8,717.05,582,715.05,589.2z"/>
+                       <path id="i" class="st0" d="M818.85,634.2c-7.8,0-13.6-2.45-17.4-7.35c-3.8-4.9-5.7-10.85-5.7-17.85c0-4.6,0.85-10.4,2.55-17.4
+                           c1.7-7,3.95-14.35,6.75-22.05c2.8-7.7,6.05-14.95,9.75-21.75c3.7-6.8,7.65-12.35,11.85-16.65c4.2-4.3,8.3-6.45,12.3-6.45
+                           c1.8,0,3.35,0.55,4.65,1.65c1.3,1.1,1.95,2.75,1.95,4.95c0,2.4-1.55,6.3-4.65,11.7c-3.1,5.4-6.75,11.6-10.95,18.6
+                           c-4.2,7-7.85,14.35-10.95,22.05c-3.1,7.7-4.65,15.05-4.65,22.05c0,7.2,1.2,12,3.6,14.4c2.4,2.4,6.1,3.6,11.1,3.6
+                           c6.8,0,14.05-3.4,21.75-10.2c7.7-6.8,15.85-18.7,24.45-35.7l2.7,3c-5.8,17.2-14.15,30.4-25.05,39.6
+                           C842,629.6,830.65,634.2,818.85,634.2z M854.85,496.8c-3.2,0-6.05-0.8-8.55-2.4c-2.5-1.6-3.75-4.1-3.75-7.5
+                           c0-4.2,2.45-7.85,7.35-10.95c4.9-3.1,9.75-4.65,14.55-4.65c3,0,5.4,0.7,7.2,2.1c1.8,1.4,2.7,3.8,2.7,7.2c0,3.8-2.05,7.45-6.15,10.95
+                           C864.1,495.05,859.65,496.8,854.85,496.8z"/>
+                       <path id="d" class="st0" d="M887.25,635.4c-3.4,0-6.85-0.85-10.35-2.55c-3.5-1.7-6.4-4.45-8.7-8.25s-3.45-8.6-3.45-14.4
+                           c0-6.6,1.6-14,4.8-22.2c3.2-8.2,7.5-16.35,12.9-24.45c5.4-8.1,11.6-15.6,18.6-22.5c7-6.9,14.3-12.4,21.9-16.5
+                           c7.6-4.1,15.1-6.15,22.5-6.15c4.2,0,7.45,0.75,9.75,2.25c2.3,1.5,3.45,3.85,3.45,7.05c0,0.8-0.05,1.5-0.15,2.1
+                           c-0.1,0.6-0.25,1.3-0.45,2.1c-1-1.6-2.45-2.75-4.35-3.45c-1.9-0.7-4.25-1.05-7.05-1.05c-6.4,0-12.65,1.95-18.75,5.85
+                           c-6.1,3.9-11.7,9-16.8,15.3c-5.1,6.3-9.55,13.05-13.35,20.25c-3.8,7.2-6.75,14.15-8.85,20.85c-2.1,6.7-3.15,12.35-3.15,16.95
+                           c0,4.4,1,7.9,3,10.5c2,2.6,4.6,3.9,7.8,3.9c5.4,0,11.95-3.4,19.65-10.2c7.7-6.8,15.55-16.4,23.55-28.8c8-12.4,15.2-26.9,21.6-43.5
+                           c4.4-11.6,8.95-23.4,13.65-35.4c4.7-12,9.45-23.55,14.25-34.65s9.45-21,13.95-29.7s8.8-15.6,12.9-20.7c4.1-5.1,7.75-7.65,10.95-7.65
+                           c1.6,0,3,0.65,4.2,1.95c1.2,1.3,1.8,2.95,1.8,4.95c0,3.2-1.65,8.65-4.95,16.35c-3.3,7.7-7.6,16.9-12.9,27.6
+                           c-5.3,10.7-10.85,22.35-16.65,34.95c-5.8,12.6-11.35,25.4-16.65,38.4c-5.3,13-9.6,25.55-12.9,37.65c-3.3,12.1-4.95,23.15-4.95,33.15
+                           c0,5.6,0.3,9.8,0.9,12.6c0.6,2.8,2.6,4.2,6,4.2c4.2,0,9.1-1.8,14.7-5.4c5.6-3.6,11.2-8.7,16.8-15.3c5.6-6.6,10.5-14.5,14.7-23.7
+                           l3.6,2.7c-3.8,10.2-9,19.35-15.6,27.45c-6.6,8.1-13.65,14.5-21.15,19.2c-7.5,4.7-14.65,7.05-21.45,7.05
+                           c-7.4,0-12.55-2.45-15.45-7.35c-2.9-4.9-4.35-9.95-4.35-15.15c0-3.4,0.5-7.9,1.5-13.5c1-5.6,2.4-11.8,4.2-18.6
+                           c-6.4,10.6-13.2,20.15-20.4,28.65c-7.2,8.5-14.25,15.15-21.15,19.95S893.45,635.4,887.25,635.4z"/>
+                       <path id="a" class="st0" d="M1025.85,640.5c-6.2,0-11.45-2.05-15.75-6.15c-4.3-4.1-6.45-10.35-6.45-18.75c0-7.2,1.6-14.95,4.8-23.25
+                           c3.2-8.3,7.6-16.5,13.2-24.6c5.6-8.1,11.95-15.5,19.05-22.2c7.1-6.7,14.6-12.05,22.5-16.05c7.9-4,15.75-6,23.55-6
+                           s14.3,2.05,19.5,6.15c5.2,4.1,7.8,9.55,7.8,16.35c0,5-1.35,8.4-4.05,10.2s-6.25,2.7-10.65,2.7c0.4-1.6,0.75-3.35,1.05-5.25
+                           c0.3-1.9,0.45-3.65,0.45-5.25c0-4.6-1.1-8.55-3.3-11.85c-2.2-3.3-6-4.95-11.4-4.95c-5.6,0-11.3,1.95-17.1,5.85
+                           c-5.8,3.9-11.4,9.1-16.8,15.6c-5.4,6.5-10.2,13.55-14.4,21.15c-4.2,7.6-7.5,15.1-9.9,22.5c-2.4,7.4-3.6,14-3.6,19.8
+                           c0,7.8,2.7,11.7,8.1,11.7c4.6,0,9.6-2.15,15-6.45c5.4-4.3,10.95-9.8,16.65-16.5c5.7-6.7,11.15-13.65,16.35-20.85
+                           c5.2-7.2,9.8-13.8,13.8-19.8c0.8-1.2,1.3-1.8,1.5-1.8c1.2,0.2,2.75,0.6,4.65,1.2c1.9,0.6,3.55,1.4,4.95,2.4c1.4,1,2.1,2.3,2.1,3.9
+                           c0,1.8-0.9,4.25-2.7,7.35c-1.8,3.1-3.8,6.65-6,10.65c-2.2,4-4.2,8.05-6,12.15c-1.8,4.1-2.7,7.95-2.7,11.55c0,3,0.8,5.95,2.4,8.85
+                           c1.6,2.9,4.2,4.35,7.8,4.35c5.4,0,12.5-3.95,21.3-11.85c8.8-7.9,17.7-19.75,26.7-35.55l3,3c-4.2,10.8-9.6,20.3-16.2,28.5
+                           c-6.6,8.2-13.65,14.6-21.15,19.2s-14.85,6.9-22.05,6.9c-7.4,0-12.85-2.2-16.35-6.6c-3.5-4.4-5.25-9.2-5.25-14.4
+                           c0-1.2,0.1-2.55,0.3-4.05c0.2-1.5,0.4-3.05,0.6-4.65c-8.6,11.6-16.45,20.3-23.55,26.1C1040.5,637.6,1033.25,640.5,1025.85,640.5z"/>
+                       <path id="m" class="st0" d="M1293.45,635.7c-7,0-12.1-2.15-15.3-6.45c-3.2-4.3-4.8-9.45-4.8-15.45c0-5,0.75-10,2.25-15
+                           c1.5-5,3-9.9,4.5-14.7c1.5-4.8,2.25-9.1,2.25-12.9c0-4-0.9-6.8-2.7-8.4c-1.8-1.6-3.8-2.4-6-2.4c-5,0-10.45,3.9-16.35,11.7
+                           c-5.9,7.8-13.55,18.8-22.95,33c-3.2,4.8-5.9,9.65-8.1,14.55c-2.2,4.9-4.3,9.35-6.3,13.35c-1.6,0-3.6-0.2-6-0.6
+                           c-2.4-0.4-4.55-1.05-6.45-1.95c-1.9-0.9-2.85-2.05-2.85-3.45c0-1.4,0.95-4.75,2.85-10.05c1.9-5.3,4.1-11.5,6.6-18.6
+                           c2.5-7.1,4.7-14.3,6.6-21.6c1.9-7.3,2.85-13.55,2.85-18.75c0-3.4-0.55-6.15-1.65-8.25c-1.1-2.1-3.05-3.15-5.85-3.15
+                           c-4.4,0-9.7,2.65-15.9,7.95c-6.2,5.3-12.6,12.25-19.2,20.85c-6.6,8.6-12.85,18.05-18.75,28.35c-5.9,10.3-10.65,20.55-14.25,30.75
+                           c-1.8,0-4-0.3-6.6-0.9c-2.6-0.6-4.85-1.4-6.75-2.4c-1.9-1-2.85-2-2.85-3c0-1.2,1.05-4.75,3.15-10.65c2.1-5.9,4.5-13,7.2-21.3
+                           c2.7-8.3,5.1-16.75,7.2-25.35c2.1-8.6,3.15-16.2,3.15-22.8c1.2-1.4,3.1-2.8,5.7-4.2c2.6-1.4,5.3-2.1,8.1-2.1
+                           c2.8,0,4.85,0.7,6.15,2.1c1.3,1.4,1.95,3.3,1.95,5.7c0,2.6-0.75,7.05-2.25,13.35s-3.35,13.25-5.55,20.85
+                           c4-6.4,8.55-12.95,13.65-19.65c5.1-6.7,10.45-12.85,16.05-18.45c5.6-5.6,11.25-10.15,16.95-13.65c5.7-3.5,11.25-5.25,16.65-5.25
+                           c6.2,0,10.45,2.25,12.75,6.75c2.3,4.5,3.45,9.85,3.45,16.05c0,5-0.55,10.25-1.65,15.75c-1.1,5.5-2.35,10.6-3.75,15.3
+                           c-1.4,4.7-2.7,8.45-3.9,11.25c4.2-7.6,8.85-14.95,13.95-22.05c5.1-7.1,10.65-12.9,16.65-17.4s12.4-6.75,19.2-6.75
+                           c6.4,0,10.85,1.9,13.35,5.7c2.5,3.8,3.75,8.3,3.75,13.5c0,5.2-0.9,10.9-2.7,17.1c-1.8,6.2-3.65,12.2-5.55,18
+                           c-1.9,5.8-2.85,10.8-2.85,15c0,2.6,0.65,4.95,1.95,7.05c1.3,2.1,3.65,3.15,7.05,3.15c5.6,0,10.85-2.55,15.75-7.65
+                           c4.9-5.1,9.45-11.3,13.65-18.6c4.2-7.3,7.8-14.35,10.8-21.15l3.6,4.2c-3.2,8.4-7.3,16.75-12.3,25.05c-5,8.3-10.85,15.15-17.55,20.55
+                           C1308.79,633,1301.44,635.7,1293.45,635.7z"/>
+                       </g>
+                   </g>
+                   
+                </svg>
+            </div>
+            
+        </div>
+        <!-- <div class="title_back"></div> -->
+
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="title_wrap">
+            <span class="title_num">01</span>
+            <span class="title_line"></span>
+            <h2>About Me</h2>
+        </div>
+        <div class="about_wrap">
+            <div class="about_hello">
+                <p>HELLO!</p>
+                <p>HELLO!</p>
+                <p>HELLO!</p>
+            </div>
+            <div class="about_img_section">
+                <div class="about_line_wrap">
+                    <div class="img_outline">
+                        <div class="img_inline">
+                            <img src="/img/yeidam/memoji.jpeg" alt="">
+                        </div>
+                        <span class="outline_left"></span>
+                        <span class="outline_right"></span>
                     </div>
-                </section>
+                </div>
+            </div>
+            <div class="about_discription">
+                <p>뭔 말이 들어가야하냐</p>
             </div>
         </div>
-        <!-- 세번째 페이지 -->
-        <div class="scr prt horiz" id="process">
-            <div class="spane">
-                <!-- 옆슬라이드1 -->
-                <div class="pane an" style="background:#001f3f;" data-id="Horizontal01">
-                    <div class="ct">
-                        <div id="sample">
-                            <div><a href="#" id="img_popup"><img src="./img/yeidam/mac1.png" alt="맥1" style="width: 1000px;"></a></div>
-                            <div class="modal_popup">
-                                <div class="modal_wrap">
-                                    <div class="modal_title">
-                                        <p>술한잔</p>
-                                        <button class="modal_btn">X</button>
-                                    </div>
-                                    <div class="modal_img">
-                                        <img src="./img/yeidam/suljan.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="discription">
-                                <div class="discription_text">
-                                    <h2>술한잔</h2>
-                                    <span></span>
-                                    <p><strong>TYPE</strong>Responsive Web</p>
-                                    <p><strong>PAGE</strong>Main + Sub*n</p>
-                                    <p><strong>TOOL</strong>Figma, HTML, CSS, JS(jQuery)</p>
-                                    <p><strong>PROCESS</strong>Swiper Js, 등등 뭐지</p>
-                                    <p><strong>참여도</strong>100%</p>
-                                </div>
-                                <button><a href="http://suljan.dothome.co.kr/">링크</a></button>
-                                <button><a href="./file/project.pdf">기획서</a></button>
-                                <button><a href="./file/story.pdf">스토리보드</a></button>
-                                <button><a href="https://www.figma.com/file/TVqQoTFfUWaANT9vMZTEOk/%EC%88%A0%ED%95%9C%EC%9E%94_%EC%84%A4%EA%B3%84?node-id=54%3A226&t=ZB0rxzcUMcFOionA-1">피그마</a></button>
-                            </div>
-                        </div>
+        <div class="career">
+            <div class="career_1">
+                <div class="contact_wrap">
+                    <div class="contact_line"></div>
+                    <p>Contact</p>
+                    <div class="about_inner_wrap about_inner_wrap2">
+                        <p>인적사항이 들어가남</p>
+                        <p>박예담 1998.01.09</p>
                     </div>
                 </div>
-                <!-- 옆슬라이드2 -->
-                <div class="pane an" style="background:#732323;" data-id="Horizontal02">
-                    <div class="ct">
-                        <div class="sample">
-                            <img src="./img/yeidam/mac2.png" alt="맥2" style="width: 1000px;">
-                            <button><a href="http://suljan.dothome.co.kr/BEARS/index.html">링크임</a></button>
-                        </div>
+                <div class="hard_skill_wrap">
+                    <div class="hard_skill_line"></div>
+                    <p>Hardskill</p>
+                    <div class="about_inner_wrap">
+
                     </div>
                 </div>
-                <!-- 옆슬라이드3 -->
-                <div class="pane an" style="background:#ff9b29;" data-id="Horizontal03">
-                    <div class="ct">
-                        <div class="sample">
-                            <img src="./img/yeidam/mac3.png" alt="맥3" style="width: 1000px;">
-                            <button><a href="https://yaedams2.cafe24.com/">링크임</a></button>
-                        </div>
+            </div>
+            <!-- <span class="about_deco"></span> -->
+            <div class="career_2">
+                <div class="certificate_wrap">
+                    <div class="certificate_line"></div>
+                    <p>Certificate</p>
+                    <div class="about_inner_wrap">
+                        <p>• 운전면허</p>
+                        <p>• gtq</p>
+                        <p>• 웹디자인기능사</p>
                     </div>
                 </div>
-                <!-- 옆슬라이드4 -->
-                <div class="pane an" style="background:#1d4528;" data-id="Horizontal04">
-                    <div class="ct">
-                        <div class="sample">
-                            <img src="./img/yeidam/mac4.png" alt="맥4" style="width: 1000px;">
-                            <button><a href="http://suljan.dothome.co.kr/todo/main.html">링크임</a></button>
-                        </div>
+                <div class="educations_wrap">
+                    <div class="educations_line"></div>
+                    <p>Educations</p>
+                    <div class="about_inner_wrap">
+                        <p>• Shanghai Korean School</p>
+                        <p>[ 2012 - 2015 ]</p>
+                        <p>• 중앙대 국제물류학과</p>
+                        <p>[ 2016.03 - 2021.08 ]</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 네번째 페이지  -->
-        <div class="scr pane prt an" data-id="scr03" id="work">
-            <div class="ct">
-                <section class="portfolio-carousel wow fadeIn">
-                    <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-                    <!-- Carousel Item 1 -->
-                    <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-5 col-md-push-7">
-                                    <div class="project-details">
-                                        <span class="project-name">Project Name</span>
-                                        <span class="project-description">Branding, Website Design</span>
-                                        <hr class="colored">
-                                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                    <div class="device-container">
-                                        <div class="device-mockup macbook portrait black">
-                                            <div class="device">
-                                                <div class="screen">
-                                                    <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Item 2 -->
-                    <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-5 col-md-push-7">
-                                    <div class="project-details">
-                                        <span class="project-name">Project Name</span>
-                                        <span class="project-description">Branding, Website Design</span>
-                                        <hr class="colored">
-                                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                    <div class="device-container">
-                                        <div class="device-mockup macbook portrait black">
-                                            <div class="device">
-                                                <div class="screen">
-                                                    <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Item 3 -->
-                    <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-5 col-md-push-7">
-                                    <div class="project-details">
-                                        <span class="project-name">Project Name</span>
-                                        <span class="project-description">Branding, Website Design</span>
-                                        <hr class="colored">
-                                        <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                    <div class="device-container">
-                                        <div class="device-mockup macbook portrait black">
-                                            <div class="device">
-                                                <div class="screen">
-                                                    <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Carousel Item 4 -->
-                    <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-5 col-md-push-7">
-                                    <div class="project-details">
-                                        <span class="project-name">Project Name</span>
-                                        <span class="project-description">Branding, Website Design</span>
-                                        <hr class="colored">
-                                        <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                    <div class="device-container">
-                                        <div class="device-mockup macbook portrait black">
-                                            <div class="device">
-                                                <div class="screen">
-                                                    <img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-responsive" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- 다섯번째 페이지 -->
-        <div class="scr pane prt an" data-id="scr04" id="contact">
-            <div class="ct">
-                <section>
-                    <div class="container wow fadeIn">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                                <h2>Contact Us</h2>
-                                <hr class="colored">
-                                <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
-                            </div>
-                        </div>
-                        <div class="row content-row">
-                            <div class="col-lg-8 col-lg-offset-2">
-                                <form name="sentMessage" id="contactForm" novalidate>
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                                            <label>Name</label>
-                                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                                            <label>Email Address</label>
-                                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                                            <label>Phone Number</label>
-                                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <div class="row control-group">
-                                        <div class="form-group col-xs-12 floating-label-form-group controls">
-                                            <label>Message</label>
-                                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div id="success"></div>
-                                    <div class="row">
-                                        <div class="form-group col-xs-12">
-                                            <button type="submit" class="btn btn-outline-dark">Send</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Team Section -->
-    <!-- <section class="bg-gray">
-        <div class="container text-center wow fadeIn">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Our Team</h2>
-                    <p>We are a group of digital marketers with a passion for great art that serves a practical purpose.</p>
-                    <hr class="colored">
-                </div>
-            </div>
-            <div class="row content-row">
-                <div class="col-lg-12">
-                    <div class="about-carousel">
-                        NOTE: You can add more items to the carousel, or remove items you don't need! -->
-                        <!-- Team Member 1
-                        <div class="item">
-                            <div class="overlay"></div>
-                            <img src="img/agency/team/1.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Patricia West</h3>
-                                <hr class="colored">
-                                <p>Marketing Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        Team Member 2
-                        <div class="item">
-                            <div class="overlay"></div>
-                            <img src="img/agency/team/2.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Howard Scott</h3>
-                                <hr class="colored">
-                                <p>Sales Manager</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        Team Member 3
-                        <div class="item">
-                            <div class="overlay"></div>
-                            <img src="img/agency/team/3.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Kate Williams</h3>
-                                <hr class="colored">
-                                <p>Creative Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        Team Member 4
-                        <div class="item">
-                            <div class="overlay"></div>
-                            <img src="img/agency/team/4.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Jeremy Davidson</h3>
-                                <hr class="colored">
-                                <p>Web Developer</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        Team Member 5
-                        <div class="item">
-                            <div class="overlay"></div>
-                            <img src="img/agency/team/5.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Amy Vanderbute</h3>
-                                <hr class="colored">
-                                <p>Graphic Artist</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Quote Call to Action -->
-    <!-- <aside class="cta-quote" style="background-image: url('img/agency/backgrounds/bg-aside.jpg');">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <span class="quote">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</span>
-                    <hr class=" colored">
-                    <a class="btn btn-outline-light page-scroll" href="#process">How We Work</a>
-                </div>
-            </div>
-        </div>
-    </aside> -->
+    </section>
 
     <!-- Services Section -->
-    <!-- <section id="process" class="services">
+    <section id="portfolio" class="services">
+        <div class="title_wrap">
+            <span class="title_num">02</span>
+            <span class="title_line"></span>
+            <h2>Portfolio</h2>
+        </div>
         <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-12 wow fadeIn">
-                    <h2>Our Process</h2>
-                    <hr class="colored">
-                    <p>Here is an overview of how we approach each new project.</p>
+            <div class="portfolio_wrap">
+                <div class="pot_top">
+                    <h2>술한잔</h2>
                 </div>
-            </div>
-            <div class="row content-row">
-                Service Item 1
-                <div class="col-md-4 wow fadeIn" data-wow-delay=".2s">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-clipboard"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Plan</h3>
-                            <ul>
-                                <li>Client interview</li>
-                                <li>Gather consumer data</li>
-                                <li>Create content strategy</li>
-                                <li>Analyze research</li>
-                            </ul>
+                <div class="img_wrap2">
+                    <div class="portfolio_img2">
+                        <div class="auto_scroll">
+                            <div class="viewport" style="background-image:url('./img/yeidam/suljan.png')"></div>
                         </div>
                     </div>
                 </div>
-                Service Item 2
-                <div class="col-md-4 wow fadeIn" data-wow-delay=".4s">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-pencil"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Create</h3>
-                            <ul>
-                                <li>Build wireframe</li>
-                                <li>Gather client feedback</li>
-                                <li>Code development</li>
-                                <li>Marketing review</li>
-                            </ul>
-                        </div>
+                <div id="marquee">
+                    <div class="track">
+                        <div class="marquee_content">SULJAN &nbsp; SULJAN &nbsp; SULJAN &nbsp; SULJAN &nbsp; SULJAN &nbsp; SULJAN</div>
+                    </div>
+                    <div class="track2">
+                        <div class="marquee_content2">HARD CODING &nbsp; HARD CODING &nbsp; HARD CODING &nbsp; HARD CODING &nbsp; HARD CODING</div>
                     </div>
                 </div>
-                Service Item 3
-                <div class="col-md-4 wow fadeIn" data-wow-delay=".6s">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="fa fa-rocket"></i>
+                <div class="pot_bottom">
+                    <div class="p_bottom_1">
+                        <p> / Type <span>Responsive Web</span></p>
+                        <p> / Page <span>Main + Sub*n</span></p>
+                        <p> / Tool <span>Figma, HTML, SCSS, JS(jQuery),Swiper Js</span></p>
+                        <p> / 참여도 <span>100%</span></p>
+                    </div>
+                    <div class="p_bottom_2">
+                        
+                        <div class="p_bottom_btn">
+                            <button><a href="http://suljan.dothome.co.kr/" target="_blank">VISIT WEB (↗)</a></button>
+                            <button><a href="./file/project.pdf" target="_blank">기획서</a></button>
+                            <button><a href="./file/story.pdf" target="_blank">스토리보드</a></button>
+                            <button><a href="https://www.figma.com/file/TVqQoTFfUWaANT9vMZTEOk/%EC%88%A0%ED%95%9C%EC%9E%94_%EC%84%A4%EA%B3%84?node-id=54%3A226&t=ZB0rxzcUMcFOionA-1" target="_blank">피그마</a></button>
                         </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Launch</h3>
-                            <ul>
-                                <li>Deploy website</li>
-                                <li>Market product launch</li>
-                                <li>Collect UX data</li>
-                                <li>Quarterly maintenence</li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+            <div class="portfolio_wrap2">
+                <div class="pot_top">
+                    <h2>TRUDON</h2>
+                </div>
+                <div class="img_wrap2">
+                    <div class="portfolio_img2">
+                        <div class="auto_scroll">
+                            <div class="viewport" style="background-image:url('./img/yeidam/trudon.png')"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="marquee">
+                    <div class="track">
+                        <div class="marquee_content">TRUDON &nbsp; TRUDON &nbsp; TRUDON &nbsp; TRUDON &nbsp; TRUDON &nbsp; TRUDON</div>
+                    </div>
+                    <div class="track2">
+                        <div class="marquee_content2">CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24 &nbsp; CAFE24</div>
+                    </div>
+                </div>
+                <div class="pot_bottom">
+                    <div class="p_bottom_1">
+                        <p> / Type <span>Responsive Web</span></p>
+                        <p> / Page <span>Main + Sub*n</span></p>
+                        <p> / Tool <span>Figma, HTML, SCSS, JS(jQuery),Swiper Js</span></p>
+                        <p> / 참여도 <span>100%</span></p>
+                    </div>
+                    <div class="p_bottom_2">
+                        
+                        <div class="p_bottom_btn">
+                            <button><a href="https://yaedams2.cafe24.com/" target="_blank">VISIT WEB (↗)</a></button>
+                            <button><a href="./file/project.pdf" target="_blank">기획서</a></button>
+                            <button><a href="./file/story.pdf" target="_blank">스토리보드</a></button>
+                            <button><a href="https://www.figma.com/file/TVqQoTFfUWaANT9vMZTEOk/%EC%88%A0%ED%95%9C%EC%9E%94_%EC%84%A4%EA%B3%84?node-id=54%3A226&t=ZB0rxzcUMcFOionA-1" target="_blank">피그마</a></button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- <section id="protfolio2">
+        <div class="container">
+            <div class="imac">
+                <div class="screen">
+                    <div class="viewport" style="background-image:url('./img/yeidam/trudon.png');"></div>
+                </div>
+                <div class="logo"></div>
+                <div class="leg"></div>
+                <div class="foot"></div>
+            </div>
+            <div class="imac">
+                <div class="screen">
+                    <div class="viewport" style="background-image:url('./img/yeidam/bears.png');"></div>
+                </div>
+                <div class="logo"></div>
+                <div class="leg"></div>
+                <div class="foot"></div>
+            </div>
+            <div class="imac">
+                <div class="screen">
+                    <div class="viewport" style="background-image:url('./img/yeidam/todo.png');"></div>
+                </div>
+                <div class="logo"></div>
+                <div class="leg"></div>
+                <div class="foot"></div>
+            </div>
+            
         </div>
     </section> -->
 
     <!-- Portfolio Carousel Heading -->
     <!-- <section id="work" class="bg-gray">
-        <div class="container text-center wow fadeIn">
-            <h2>Our Work</h2>
-            <hr class="colored">
-            <p>Here are some examples of our work.</p>
-        </div>
-    </section> -->
-
-    <!-- Portfolio Carousel -->
-
-
-    <!-- Portfolio Grid Section -->
-    <!-- <section id="portfolio">
-        <div class="container text-center wow fadeIn">
-            <h2>Portfolio</h2>
-            <hr class="colored">
-            <p>Here are some other projects that we've worked on.</p>
-            <div class="row content-row">
-                <div class="col-lg-12">
-                    <div class="portfolio-filter">
-                        <ul id="filters" class="clearfix">
-                            <li>
-                                <span class="filter active" data-filter="all">All</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter=".identity">Identity</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter=".graphic">Graphic</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter=".web">Web</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="portfoliolist"> -->
-                        <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
-                        <!-- Grid Item 1 -->
-                        <!-- <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 2 -->
-                        <!-- <div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-2.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 3 -->
-                        <!-- <div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-3.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 4 -->
-                        <!-- <div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-4.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 5 -->
-                        <!-- <div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-5.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 6 -->
-                        <!-- <div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-6.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 7 -->
-                        <!-- <div class="mix graphic" href="img/agency/portfolio/grid/grid-7.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-7.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 8 -->
-                        <!-- <div class="mix web" href="img/agency/portfolio/grid/grid-8.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-8.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Grid Item 9 -->
-                        <!-- <div class="mix identity" href="img/agency/portfolio/grid/grid-9.jpg" title="Client Name">
-                            <div class="portfolio-wrapper">
-                                <img src="img/agency/portfolio/grid/grid-9.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Client Name</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="imac">
+                        <div class="screen">
+                            <div class="viewport" style="background-image:url('./img/yeidam/trudon.png');"></div>
                         </div>
+                        <div class="logo"></div>
+                        <div class="leg"></div>
+                        <div class="foot"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imac">
+                        <div class="screen">
+                            <div class="viewport" style="background-image:url('./img/yeidam/bears.png');"></div>
+                        </div>
+                        <div class="logo"></div>
+                        <div class="leg"></div>
+                        <div class="foot"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imac">
+                        <div class="screen">
+                            <div class="viewport" style="background-image:url('./img/yeidam/todo.png');"></div>
+                        </div>
+                        <div class="logo"></div>
+                        <div class="leg"></div>
+                        <div class="foot"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="imac">
+                        <div class="screen">
+                            <div class="viewport" style="background-image:url('./img/yeidam/todo.png');"></div>
+                        </div>
+                        <div class="logo"></div>
+                        <div class="leg"></div>
+                        <div class="foot"></div>
                     </div>
                 </div>
             </div>
-        </div> -->
-    <!-- </section> -->
-
-    <!-- Testomonials Section -->
-    <!-- <section class="testimonials bg-gray">
-        <div class="container wow fadeIn">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="testimonials-carousel"> -->
-                        <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-                        <!-- Testimonial Item 1 -->
-                        <!-- <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="img/agency/testimonials/1.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Jim Walker</span>
-                                            <p class="small">CEO of Company Name</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Testimonial Item 2 -->
-                        <!-- <div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Vitality is a well coded, well documented, and easy to use theme!"</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="img/agency/testimonials/2.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Ashley Creadle</span>
-                                            <p class="small">Creative Director of Company Name</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    <!-- </div>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section> -->
 
-    <!-- Pricing Section -->
-    <!-- <section id="pricing" class="pricing" style="background-image: url('img/agency/backgrounds/bg-pricing.jpg')">
-        <div class="container wow fadeIn">
-            <div class="row text-center">
-                <div class="col-lg-12">
-                    <h2>Pricing</h2>
-                    <hr class="colored">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.</p>
-                </div>
-            </div>
-            <div class="row content-row">
-                Pricing Table 1
-                <div class="col-md-4">
-                    <div class="pricing-item featured-first">
-                        <h3>Basic</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>25</span> / month</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+    <!-- test -->
+    <section id="renewal">
+        <div class="title_wrap">
+            <span class="title_num">03</span>
+            <span class="title_line"></span>
+            <h2>Renewal</h2>
+        </div>
+        <div class="renewal_cursor"></div>
+        <div class="wrapper">
+            <div class="project-list">
+                <div class="project p-1">
+                    <div class="project-title"><h3>doosan bears</h3></div>
+                    <div class="project-categ">
+                        <button><a href="https://www.doosanbears.com/" target="_blank">Before (↗)</a></button>
+                        <button><a href="http://suljan.dothome.co.kr/BEARS/index.html" target="_blank">After (↗)</a></button>
                     </div>
+                    <div class="project-overlay"></div>
                 </div>
-                Pricing Table 2
-                <div class="col-md-4">
-                    <div class="pricing-item featured">
-                        <h3>Plus</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>50</span> / month</div>
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>60</strong> Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item"><strong>3,000</strong> Entries per Month</li>
-                            <li class="list-group-item"><strong>200 MB</strong> Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                <div class="project p-2">
+                    <div class="project-title"><h3>giant</h3></div>
+                    <div class="project-categ">
+                        <button><a href="https://www.giant-bicycles.com/kr" target="_blank">Before (↗)</a></button>
+                        <button><a href="http://suljan.dothome.co.kr/giant/index.html" target="_blank">After (↗)</a></button>
                     </div>
+                    <div class="project-overlay"></div>
                 </div>
-                Pricing Table 3
-                <div class="col-md-4">
-                    <div class="pricing-item featured-last">
-                        <h3>Premium</h3>
-                        <hr class="colored">
-                        <div class="price"><span class="number"><sup>$</sup>150</span> / month</div>
-                        <ul class="list-group">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
-                            <li class="list-group-item">Unlimited Support</li>
-                        </ul>
-                        <a href="#" class="btn btn-outline-dark">Sign Up</a>
+                <div class="project p-3">
+                    <div class="project-title"><h3>renewal_3</h3></div>
+                    <div class="project-categ">
+                        <button><a href="#">Before (↗)</a></button>
+                        <button><a href="#" target="_blank">After (↗)</a></button>
                     </div>
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project p-4">
+                    <div class="project-title"><h3>todo list</h3></div>
+                    <div class="project-categ">
+                        <button><a href="http://suljan.dothome.co.kr/todo/main.html" target="_blank">Link (↗)</a></button>
+                    </div>
+                    <div class="project-overlay"></div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- Newsletter Signup Call to Action -->
-    <!-- <section class="cta-form bg-dark">
-        <div class="container text-center">
-            <h3>Subscribe to our newsletter!</h3>
-            <hr class="colored">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    MailChimp Signup Form
-                    <div id="mc_embed_signup">
-                        Replace the form action in the line below with your MailChimp embed action! Visit the documentation for additional instructions!
-                        <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-                            <div class="input-group input-group-lg">
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                                <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
-                                </span>
-                            </div>
-                            <div id="mce-responses">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </form>
-                    </div>
-                    End MailChimp Signup Form
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
 
 
     <!-- Block Button Call to Action -->
-    <!-- <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a>-->
+    <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a>
 
     <!-- Footer -->
-    <!-- <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
+    <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 contact-details">
@@ -1187,262 +562,24 @@
                 </div>
             </div>
         </div>
-    </footer> -->
-
-    <!-- Portfolio Modals -->
-    <!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Project Name</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-
-                                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                        <!-- <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt=""> -->
-
-                                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                        <div class="mockup-carousel">
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-1b.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-1c.jpg" class="img-responsive" alt="">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong>Start Bootstrap</strong>
-                                </li>
-                                <li>Date: <strong>April 2015</strong>
-                                </li>
-                                <li>Service: <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Project Name</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-
-                                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                        <!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt=""> -->
-
-                                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                        <div class="mockup-carousel">
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-2b.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-2c.jpg" class="img-responsive" alt="">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong>Start Bootstrap</strong>
-                                </li>
-                                <li>Date: <strong>April 2015</strong>
-                                </li>
-                                <li>Service: <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 3: Corresponds with Portfolio Carousel Item 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Project Name</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-
-                                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
-                                        <!-- <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt=""> -->
-
-                                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
-                                        <div class="mockup-carousel">
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-3b.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-3c.jpg" class="img-responsive" alt="">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong>Start Bootstrap</strong>
-                                </li>
-                                <li>Date: <strong>April 2015</strong>
-                                </li>
-                                <li>Service: <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Example Modal 4: Corresponds with Portfolio Carousel Item 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <h2>Project Name</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="device-mockup macbook portrait black">
-                                <div class="device">
-                                    <div class="screen">
-
-                                        <!-- Modal Mockup Option 1: Single Image (Example In Use Below) -->
-                                        <img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-responsive" alt="">
-
-                                        <!-- Modal Mockup Option 2: Carousel (Uncomment Below to Use) -->
-                                        <!-- <div class="mockup-carousel">
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                            <div class="item">
-                                                <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
-                                            </div>
-                                        </div> -->
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong>Start Bootstrap</strong>
-                                </li>
-                                <li>Date: <strong>April 2015</strong>
-                                </li>
-                                <li>Service: <strong>Web Development</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
         <!-- Core Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
-    
-    <script src="/js/main.js"></script>
 
+    <script src="./js/main.js"></script>
 
 
     <!-- Plugin Scripts -->
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    
     <script src="vendor/formstone/core.js"></script>
     <script src="vendor/formstone/transition.js"></script>
     <script src="vendor/formstone/background.js"></script>
@@ -1456,8 +593,6 @@
 
     <!-- Vitality Theme Scripts -->
     <script src="js/vitality.js"></script>
-
-    
 
 </body>
 
