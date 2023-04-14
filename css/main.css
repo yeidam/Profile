@@ -303,7 +303,24 @@ section{
 #about .about_inner_wrap2{
     position: relative;
     left: 150px;
+    width: 600px;
+    text-align: end;
 }
+
+#about .about_inner_wrap2 li{
+    display: flex;
+    line-height: 50px;
+    justify-content: end;
+}
+#about .about_inner_wrap2 li strong{
+    width: 50%;
+}
+#about .about_inner_wrap2 li p{
+    width: 50%;
+    line-height: 50px;
+    text-align: end;
+}
+
 
 
 
@@ -315,11 +332,15 @@ section{
 #about .career_1,
 #about .career_2{
     display: flex;
-    height: 400px;
+    height: 450px;
 }
-#about .career_1 > div,
-#about .career_2 > div{
+#about .career_1 > div{
     width: 50%;
+    position: relative;
+}
+
+#about .career_2 > div{
+    width: 33.33%;
     position: relative;
 }
 #about .contact_wrap{
@@ -327,15 +348,17 @@ section{
 }
 #about .contact_line,
 #about .hard_skill_line,
-#about .certificate_line,
-#about .educations_line{
+#about .license_line,
+#about .educations_line,
+#about .experience_line{
     width: 90%;
     height: 40px;
     border: solid 1px #000;
     border-radius: 25px;
 }
 #about .contact_wrap > p,
-#about .hard_skill_wrap > p{
+#about .hard_skill_wrap > p,
+#about .experience_wrap > p{
     position: absolute;
     top: -25px;
     right: 200px;
@@ -346,37 +369,133 @@ section{
     font-family: 'Abril Fatface', cursive;
     /* letter-spacing: 1px; */
 }
+#about .experience_wrap{
+    right: -150px;
+}
+#about .about_inner_wrap3{
+    display: flex;
+}
 #about .hard_skill_wrap{
     left: -50px;
 }
-#about .hard_skill_inner{
+#about .hard_skill_inner_1{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    width: 400px;
     list-style: none;
     position: relative;
-    z-index: 2;
-    left: 50px;
+    left: -30px;
 }
-#about .hard_skill_inner li{
-    width: 100px;
+#about .hard_skill_inner_2{
     display: flex;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
-    display: block;
-    border: solid 1px #2b7799;
-    margin: 10px;
+    flex-direction: column;
+    width: 400px;
+    list-style: none;
+}
+
+#about .progress-bar {
+    height: 3px;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+    background-color: #dfdfcf;
+}
+#about .hard_skill_box{
+    margin: 15px;
+}
+#about .progress-bar .progress {
+    position: relative;
+    height: 100%;
+    background-color: #2b7799;
+    transition: width 0.5s ease-out;
+    border-radius: 0px 2px 2px 0px;
+}
+
+#about .hard_label {
+    font-family: 'NanumSquareNeoLight';
+    color: #000;
+    font-size: 15px;
+}
+
+#about .fill-1 {
+    animation: fill-1 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+
+#about .fill-2 {
+    animation: fill-2 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+
+#about .fill-3 {
+    animation: fill-3 0.5s ease-out 0s;
+    animation-fill-mode: forwards;
+    width: 0%;
+}
+
+@keyframes fill-1 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes fill-2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 75%;
+    }
+}
+@keyframes fill-3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 85%;
+    }
+}
+#about .hard_label.a {
+    animation: label 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#about .hard_label.b {
+    animation: label 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#about .hard_label.c {
+    animation: label 0.5s ease-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes label {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
 }
 
 
-
-@keyframes load {
+/* @keyframes load {
 	0% { width: 0; }
 	100% { width: 68%; }
-}
+} */
 
 
-#about .certificate_wrap > p,
+#about .license_wrap > p,
 #about .educations_wrap > p{
     position: absolute;
     top: -25px;
@@ -390,23 +509,117 @@ section{
 }
 
 
-#about .certificate_wrap{
+#about .license_wrap{
     left: 150px;
+}
+#about .license_inner li{
+    display: flex;
+    width: 500px;
+}
+#about .license_inner p{
+    width: 50%;
+}
+#about .license_inner div p{
+    width: 250px;
 }
 #about .educations_wrap{
     right: -200px;
 }
-/* #about .about_deco{
-    height: 500px;
-    width: 50px;
-    background-color: #efdb5e;
-    border-radius: 50px;
+
+
+
+/* 데코 색션 */
+#about .career_deco{
     position: absolute;
-    top: -60px;
-    left: calc(50% - 20px);
-    background-image: url(../img/yeidam/texture4.png);
-    background-blend-mode: multiply;
-} */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#about .career_deco > div:nth-child(2){
+    position: absolute;
+    left: 42%;
+    top: -12px;
+    width: 60px;
+    height: 60px;
+    animation: decoRotate 3s infinite linear;
+}
+@keyframes decoRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#about .deco_circle span:first-child{
+    width: 50px;
+    height: 50px;
+    background-color: #2b7799;
+    display: block;
+    border-radius: 50%;
+}
+#about .deco_circle span:nth-child(2),
+#about .deco_circle span:nth-child(3){
+    width: 50px;
+    height: 50px;
+    border: solid 1px #2b7799;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+}
+#about .deco_circle span:nth-child(3){
+    top: -40px;
+}
+#about .deco_circle{
+    position: relative;
+    left: 73%;
+    top: 400px;
+}
+#about .deco_svg1{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#about .deco_1{
+    left: 73%;
+    top: 483px;
+    z-index: 99;
+}
+#about .deco_3{
+    left: 90%;
+    top: -100%;
+    animation: decoRotate 15s infinite reverse linear;
+}
+#about .deco_4{
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 40.9%;
+}
+#about .deco_5{
+    left: 20%;
+    top: -40px;
+    z-index: -1;
+}
+#about .deco_6{
+    left: 90%;
+    top: 200%;
+    width: 100px;
+    z-index: -1;
+}
+#about .deco_8{
+    top: 310px;
+    left: 5.5%;
+    width: 150px;
+}
+
 
 /* 포트폴리오페이지 */
 #marquee{
