@@ -178,7 +178,7 @@ section{
 }
 
 #about{
-    height: 170vh;
+    height: 190vh;
     overflow: hidden;
 }
 
@@ -314,11 +314,15 @@ section{
 }
 #about .about_inner_wrap2 li strong{
     width: 50%;
+    font-family: 'NanumSquareNeoExtraBold';
+    font-size: 15px;
 }
 #about .about_inner_wrap2 li p{
     width: 50%;
     line-height: 50px;
     text-align: end;
+    font-family: 'NanumSquareNeoLight';
+    font-size: 15px;
 }
 
 
@@ -378,121 +382,51 @@ section{
 #about .hard_skill_wrap{
     left: -50px;
 }
-#about .hard_skill_inner_1{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    list-style: none;
-    position: relative;
-    left: -30px;
-}
-#about .hard_skill_inner_2{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    list-style: none;
-}
 
-#about .progress-bar {
-    height: 3px;
-    width: 400px;
-    position: relative;
-    z-index: 10;
-    background-color: #dfdfcf;
-}
-#about .hard_skill_box{
-    margin: 15px;
-}
-#about .progress-bar .progress {
-    position: relative;
-    height: 100%;
-    background-color: #2b7799;
-    transition: width 0.5s ease-out;
-    border-radius: 0px 2px 2px 0px;
-}
 
-#about .hard_label {
+/* 하드스킬 테스트 */
+#about .hardskill_inner_wrap{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#about .hardskill_inner_1{
+    width: 40%;
+}
+#about .hardskill_inner_2{
+    margin-left: 40px;
+    width: 40%;
+}
+#about .hardskill_1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+#about .hardskill_1 p{
+    line-height: 30px;
     font-family: 'NanumSquareNeoLight';
-    color: #000;
     font-size: 15px;
 }
+#about .dot_wrap{
+    display: flex;
+}
+#about .dot_wrap .skill_dot{
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: solid 1px #2b7799;
+    border-radius: 50%;
+    margin: 8px;
 
-#about .fill-1 {
-    animation: fill-1 0.5s ease-out 0s;
-    animation-fill-mode: forwards;
-    width: 0%;
 }
-
-#about .fill-2 {
-    animation: fill-2 0.5s ease-out 0s;
-    animation-fill-mode: forwards;
-    width: 0%;
-}
-
-#about .fill-3 {
-    animation: fill-3 0.5s ease-out 0s;
-    animation-fill-mode: forwards;
-    width: 0%;
-}
-
-@keyframes fill-1 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 60%;
-    }
-}
-@keyframes fill-2 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 75%;
-    }
-}
-@keyframes fill-3 {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 85%;
-    }
-}
-#about .hard_label.a {
-    animation: label 0.5s ease-out 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+#about .dot_wrap .skill_dot:nth-child(1),
+#about .dot_wrap .skill_dot:nth-child(2),
+#about .dot_wrap .skill_dot:nth-child(3){
+    background-color: #2b7799;
 }
 
-#about .hard_label.b {
-    animation: label 0.5s ease-out 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-#about .hard_label.c {
-    animation: label 0.5s ease-out 0.5s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
-@keyframes label {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 0.9;
-        transform: translateY(0);
-    }
-}
-
-
-/* @keyframes load {
-	0% { width: 0; }
-	100% { width: 68%; }
-} */
 
 
 #about .license_wrap > p,
@@ -515,13 +449,46 @@ section{
 #about .license_inner li{
     display: flex;
     width: 500px;
+    line-height: 40px;
 }
 #about .license_inner p{
     width: 50%;
+    text-align: end;
+    font-family: 'NanumSquareNeoLight';
+    font-size: 15px;
+    margin: 10px 0;
+}
+#about .license_inner > ul{
+    position: relative;
+    left: -40px;
+}
+#about .license_inner > ul > li > p:first-child{
+    font-family: 'NanumSquareNeoBold';
 }
 #about .license_inner div p{
     width: 250px;
 }
+#about .experience_inner{
+    position: relative;
+    left: 330px;
+    text-align: end;
+    width: 200px;
+}
+#about .educations_inner{
+    position: relative;
+    left: 50px;
+    width: 200px;
+}
+#about .experience_inner p,
+#about .educations_inner p{
+    font-family: 'NanumSquareNeoLight';
+    font-size: 15px;
+}
+#about .experience_inner p:nth-child(2),
+#about .educations_inner p:nth-child(2){
+    margin-bottom: 30px;
+}
+
 #about .educations_wrap{
     right: -200px;
 }
