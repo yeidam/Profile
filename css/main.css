@@ -828,13 +828,8 @@ section{
     /* background-color: #2b7799; */
     background-color: #fbfbe6;
     overflow: hidden;
+    padding: 0;
 }
-/* #renewal > h2{
-    text-align: start;
-    font-family: 'NanumSquareNeo';
-    letter-spacing: 2px;
-    margin-left: 150px;
-} */
 .project-title > h3 {
     font-weight: 300;
     font-family: 'NanumSquareNeoLight';
@@ -862,12 +857,41 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-basis: 1;
+    /* flex-basis: 1; */
+    height: 100px;
     position: relative;
     z-index: 2;
     color: white;
     mix-blend-mode: difference;
 }
+#renewal .renewal_thum_wrap1{
+    position: absolute;
+    top: 10px;
+    left: 21%;
+}
+#renewal .renewal_thum_wrap2{
+    position: absolute;
+    top: 110px;
+    left: 10%;
+}
+#renewal .renewal_thum_wrap3{
+    position: absolute;
+    top: 210px;
+    left: 17%;
+}
+#renewal .renewal_thum_wrap4{
+    position: absolute;
+    top: 310px;
+    left: 28%;
+}
+#renewal .renewal_thum_wrap1 img,
+#renewal .renewal_thum_wrap2 img,
+#renewal .renewal_thum_wrap3 img,
+#renewal .renewal_thum_wrap4 img{
+    height: 80px;
+    opacity: 0.8;
+}
+
 .project-overlay{
     position: absolute;
     top: 0;
@@ -876,10 +900,15 @@ section{
     height: 100%;
     z-index: 1;
 }
-#renewal .project-title{
+.project-list{
+    position: relative;
+}
+#renewal .project-title,
+#react .project-title{
     margin-bottom: 10px;
 }
-#renewal .project-categ{
+#renewal .project-categ,
+#react .project-categ{
     line-height: 50px;
     padding: 12px;
     width: 350px;
@@ -887,15 +916,22 @@ section{
     z-index: 999;
     position: relative;
 }
-#renewal .project-categ button{
+#renewal .project-categ button,
+#react .project-categ button{
     border: none;
     background-color: transparent;
     z-index: 99;
     position: relative;
 }
-#renewal .project-categ button a{
+#renewal .project-categ button a,
+#react .project-categ button a{
     color: #fff;
 }
-#renewal .project-categ button a:hover{
+#renewal .project-categ button a:hover,
+#react .project-categ button a:hover{
     color: #ef685e;
+}
+/* react */
+#react{
+    padding: 0;
 }
