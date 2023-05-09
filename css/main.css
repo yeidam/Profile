@@ -178,7 +178,7 @@ section{
 }
 
 #about{
-    height: 190vh;
+    height: 165vh;
     overflow: hidden;
 }
 
@@ -435,7 +435,7 @@ section{
 }
 #about .hardskill_1 p{
     line-height: 30px;
-    font-family: 'NanumSquareNeoLight';
+    font-family: 'NanumSquareNeoBold';
     font-size: 15px;
 }
 #about .dot_wrap{
@@ -815,7 +815,10 @@ section{
     border-radius: 0 0 10px 10px;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.pot_bottom .p_bottom_1{
+    margin-left: 30px;
 }
 .pot_bottom .p_bottom_1 > p{
     margin: 8px 0;
@@ -827,11 +830,14 @@ section{
 .pot_bottom .p_bottom_1 > p > span{
     position: absolute;
     left: 100px;
-    width: 300px;
+    width: 500px;
 }
 .pot_bottom .p_bottom_2{
     position: relative;
-    left: 100px;
+    left: -20px;
+}
+.pot_bottom .p_bottom_2-1{
+    left: -200px;
 }
 .p_bottom_2 button{
     background-color: transparent;
