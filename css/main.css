@@ -68,7 +68,7 @@ section{
 /* nav */
 #nav{
     backdrop-filter: blur(5px);
-    height: 60px;
+    height: 70px;
 }
 #nav .nav,
 #nav .nav > li,
@@ -667,7 +667,7 @@ section{
     to { transform: translateX(0); }
 }
 #portfolio{
-    height: 280%;
+    height: 250%;
 }
 /* #portfolio h2{
     text-align: start;
@@ -829,7 +829,7 @@ section{
     left: 100px;
     width: 300px;
 }
-.pot_bottom .p_bottom_3{
+.pot_bottom .p_bottom_2{
     position: relative;
     left: 100px;
 }
@@ -909,7 +909,7 @@ section{
 #renewal .renewal_thum_wrap1{
     position: absolute;
     top: 10px;
-    left: 21%;
+    left: 18.5%;
 }
 #renewal .renewal_thum_wrap2{
     position: absolute;
@@ -924,7 +924,7 @@ section{
 #renewal .renewal_thum_wrap4{
     position: absolute;
     top: 310px;
-    left: 28%;
+    left: 24%;
 }
 #renewal .renewal_thum_wrap1 img,
 #renewal .renewal_thum_wrap2 img,
@@ -951,8 +951,8 @@ section{
 }
 #renewal .project-categ,
 #react .project-categ{
-    line-height: 50px;
-    padding: 12px;
+    line-height: 95px;
+    padding-right: 12px;
     width: 350px;
     text-align: end;
     z-index: 999;
