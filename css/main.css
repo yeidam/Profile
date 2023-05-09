@@ -74,16 +74,22 @@ section{
     z-index: 999;
 }
 .top_btn::after{
-    content: "🫥";
+    content: "";
+    background: url('/img/yeidam/top_before.png');
     font-size: 60px;
+    background-size: 60px;
     display: block;
     width: 60px;
+    height: 60px;
 }
 .top_btn:hover::after{
-    content: "🙄";
+    content: "";
+    background: url('/img/yeidam/top_after.png');
     font-size: 60px;
+    background-size: 60px;
     display: block;
     width: 60px;
+    height: 60px;
 }
 
 /* nav */
