@@ -65,6 +65,27 @@ section{
     padding: 0;
 }
 
+.top_btn{
+    position: fixed;
+    left: 90%;
+    bottom: 10%;
+    width: 60px;
+    height: 60px;
+    z-index: 999;
+}
+.top_btn::after{
+    content: "🫥";
+    font-size: 60px;
+    display: block;
+    width: 60px;
+}
+.top_btn:hover::after{
+    content: "🙄";
+    font-size: 60px;
+    display: block;
+    width: 60px;
+}
+
 /* nav */
 #nav{
     backdrop-filter: blur(5px);
@@ -538,56 +559,23 @@ section{
     width: 100%;
     z-index: -1;
 }
-/* #about .career_deco > div:nth-child(2){
+#about .career_deco > div:nth-child(2){
     position: absolute;
     left: 42%;
     top: -12px;
     width: 60px;
     height: 60px;
     animation: decoRotate 3s infinite linear;
-} */
-#page-top .top_btn{
-    position: fixed;
-    left: 90%;
-    bottom: 10%;
-    animation: decoRotate 8s infinite linear;
-    z-index: 99;
 }
-#page-top .top_btn svg{
-    width: 120px;
-}
-#page-top .top_btn2{
-    position: fixed;
-    left: 90%;
-    bottom: 10%;
-    width: 100px;
-}
+
+
 @keyframes decoRotate{
-    0%{
-        transform: rotate(0deg);
-    }
-    /* 50%{
-        transform: rotate(180deg);
-    } */
     100%{
         transform: rotate(360deg);
+        transform-origin: center;
     }
 }
 
-/* test */
-/* #about .deco_3{
-    position: fixed;
-    top: 500px;
-    animation: decoRotate2 3s infinite linear;
-}
-@keyframes decoRotate2{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-} */
 #about .deco_circle span:first-child{
     width: 50px;
     height: 50px;
@@ -625,11 +613,11 @@ section{
     top: 483px;
     z-index: 99;
 }
-/* #about .deco_3{
+#about .deco_3{
     left: 90%;
     top: -100%;
     animation: decoRotate 15s infinite reverse linear;
-} */
+}
 #about .deco_4{
     width: 100px;
     position: absolute;
