@@ -40,10 +40,16 @@ window.onload = function(){
         $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_3.png)" });
     });
     $(".p-3").hover(function(){
-        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_3.png)" });
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_5.png)" });
     });
     $(".p-4").hover(function(){
         $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/re_4.png)" });
+    });
+    $(".p-5").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/react1.PNG)" });
+    });
+    $(".p-6").hover(function(){
+        $(".renewal_cursor").css({ "background-image": "url(./img/yeidam/todo_react.JPG)" });
     });
 
     var flag = false;

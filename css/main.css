@@ -291,7 +291,7 @@ section{
     left: -70px;
     border: solid 1px #000;
     border-radius: 0 50px 50px 0;
-    z-index: -1;
+    /* z-index: -1; */
 }
 #about .about_discription p{   
     text-align: center;
@@ -325,8 +325,37 @@ section{
     font-size: 15px;
 }
 
-
-
+#about .qr1{
+    text-align: center;
+}
+#about .qr1 img{
+    width: 80px;
+}
+#about .qr_wrap{
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 60px;
+}
+#about .qr_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+#about .qr_wrap ul li{
+    width: 200px;
+    border-left: 1px solid #ccc;
+}
+#about .qr_wrap ul li:first-child{
+    border: none;
+}
+#about .qr1 p{
+    font-family: 'NanumSquareNeo';
+    font-size: 14px;
+    line-height: 30px;
+}
+#about .qr1 p a:hover{
+    color: #2b7799;
+}
 
 /* about 두번째 색션 */
 #about .career{
@@ -421,12 +450,18 @@ section{
     margin: 8px;
 
 }
-#about .dot_wrap .skill_dot:nth-child(1),
-#about .dot_wrap .skill_dot:nth-child(2),
-#about .dot_wrap .skill_dot:nth-child(3){
+#about .dot_wrap .dot1,
+#about .dot_wrap .dot2,
+#about .dot_wrap .dot3{
     background-color: #2b7799;
 }
-
+#about .dot_fill_4 .dot4{
+    background-color: #2b7799;
+}
+#about .dot_fill_5 .dot4,
+#about .dot_fill_5 .dot5{
+    background-color: #2b7799;
+}
 
 
 #about .license_wrap > p,
@@ -787,9 +822,16 @@ section{
     padding: 0;
     font-family: 'NanumSquareNeoLight';
     font-size: 15px;
+    position: relative;
 }
 .pot_bottom .p_bottom_1 > p > span{
-    margin-left: 100px;
+    position: absolute;
+    left: 100px;
+    width: 300px;
+}
+.pot_bottom .p_bottom_3{
+    position: relative;
+    left: 100px;
 }
 .p_bottom_2 button{
     background-color: transparent;
@@ -877,7 +919,7 @@ section{
 #renewal .renewal_thum_wrap3{
     position: absolute;
     top: 210px;
-    left: 17%;
+    left: 9%;
 }
 #renewal .renewal_thum_wrap4{
     position: absolute;
@@ -934,4 +976,31 @@ section{
 /* react */
 #react{
     padding: 0;
+    height: 650px;
+}
+#react .project-list{
+    position: relative;
+}
+#react .react_thum_1{
+    position: absolute;
+    top: 10px;
+    left: 20%;
+}
+#react .react_thum_2{
+    position: absolute;
+    top: 110px;
+    left: 17%;
+}
+#react .react_thum_1 img,
+#react .react_thum_2 img{
+    height: 80px;
+    opacity: 0.8;
+}
+
+#contact{
+    background-color: #09383e9c;
+    font-family: 'NanumSquareNeo';
+}
+#contact p{
+    font-size: 15px;
 }
