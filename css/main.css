@@ -68,7 +68,7 @@ section{
 /* nav */
 #nav{
     backdrop-filter: blur(5px);
-    height: 70px;
+    height: 60px;
 }
 #nav .nav,
 #nav .nav > li,
